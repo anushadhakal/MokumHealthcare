@@ -1,0 +1,282 @@
+.overviewSection {
+    background-color: var(--white);
+  }
+  
+  .overviewContent {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    text-align: center;
+  }
+  
+  .overviewContent h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .overviewContent p {
+    color: var(--light-text);
+    margin-bottom: 15px;
+    line-height: 1.7;
+  }
+  
+  .industryCards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .industryCard {
+    background-color: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .industryCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cardImage {
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .cardImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .industryCard:hover .cardImage img {
+    transform: scale(1.05);
+  }
+  
+  .cardContent {
+    padding: 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cardContent h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+  }
+  
+  .cardContent p {
+    color: var(--light-text);
+    margin-bottom: 20px;
+    line-height: 1.7;
+  }
+  
+  .servicesList {
+    list-style: none;
+    margin-bottom: 25px;
+  }
+  
+  .servicesList li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+  }
+  
+  .servicesList li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+  }
+  
+  .readMoreLink {
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: 600;
+    position: relative;
+    transition: var(--transition);
+    margin-top: auto;
+    align-self: flex-start;
+  }
+  
+  .readMoreLink::after {
+    content: "→";
+    margin-left: 5px;
+    transition: var(--transition);
+  }
+  
+  .readMoreLink:hover {
+    color: var(--secondary-color);
+  }
+  
+  .readMoreLink:hover::after {
+    margin-left: 10px;
+  }
+  
+  .processSection {
+    background-color: var(--light-bg);
+  }
+  
+  .processSteps {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 50px;
+  }
+  
+  .processSteps::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--border-color);
+    z-index: 1;
+  }
+  
+  .processStep {
+    flex: 1;
+    text-align: center;
+    padding: 0 15px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .stepNumber {
+    width: 80px;
+    height: 80px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 auto 20px;
+  }
+  
+  .processStep h3 {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin-bottom: 15px;
+  }
+  
+  .processStep p {
+    color: var(--light-text);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  .ctaSection {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    text-align: center;
+  }
+  
+  .ctaContent {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .ctaContent h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .ctaContent p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+  }
+  
+  .ctaButtons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .primaryBtn,
+  .secondaryBtn {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: var(--transition);
+  }
+  
+  .primaryBtn {
+    background-color: var(--white);
+    color: var(--primary-color);
+  }
+  
+  .primaryBtn:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: translateY(-3px);
+  }
+  
+  .secondaryBtn {
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+  }
+  
+  .secondaryBtn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+  }
+  
+  @media (max-width: 992px) {
+    .processSteps {
+      flex-direction: column;
+      gap: 40px;
+    }
+  
+    .processSteps::before {
+      display: none;
+    }
+  
+    .stepNumber {
+      margin-bottom: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .ctaButtons {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .primaryBtn,
+    .secondaryBtn {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .overviewContent h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .cardImage {
+      height: 200px;
+    }
+  
+    .cardContent {
+      padding: 20px;
+    }
+  
+    .cardContent h3 {
+      font-size: 1.5rem;
+    }
+  }
+  

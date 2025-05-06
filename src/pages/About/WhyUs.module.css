@@ -1,0 +1,201 @@
+.approachSection {
+    background-color: var(--white);
+  }
+  
+  .approachGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .approachItem {
+    background-color: var(--light-bg);
+    border-radius: 8px;
+    padding: 30px;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .approachItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .approachNumber {
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.05);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    line-height: 1;
+  }
+  
+  .approachItem h3 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .approachItem p {
+    color: var(--light-text);
+    line-height: 1.7;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .testimonialsSection {
+    background-color: var(--light-bg);
+  }
+  
+  .testimonialsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .testimonialCard {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    position: relative;
+  }
+  
+  .testimonialCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quoteIcon {
+    font-size: 5rem;
+    line-height: 1;
+    color: var(--secondary-color);
+    opacity: 0.2;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .quoteText {
+    font-style: italic;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    line-height: 1.7;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .authorInfo {
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+  }
+  
+  .authorInfo h4 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+  }
+  
+  .authorInfo p {
+    color: var(--light-text);
+    font-size: 0.9rem;
+  }
+  
+  .ctaSection {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    text-align: center;
+  }
+  
+  .ctaContent {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .ctaContent h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .ctaContent p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+  }
+  
+  .ctaButtons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .primaryBtn,
+  .secondaryBtn {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: var(--transition);
+  }
+  
+  .primaryBtn {
+    background-color: var(--white);
+    color: var(--primary-color);
+  }
+  
+  .primaryBtn:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: translateY(-3px);
+  }
+  
+  .secondaryBtn {
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+  }
+  
+  .secondaryBtn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+  }
+  
+  @media (max-width: 992px) {
+    .approachGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .testimonialsGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .ctaButtons {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .primaryBtn,
+    .secondaryBtn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .approachGrid {
+      grid-template-columns: 1fr;
+    }
+  
+    .testimonialsGrid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

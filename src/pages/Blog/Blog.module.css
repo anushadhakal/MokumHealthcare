@@ -1,0 +1,258 @@
+.blogSection {
+    background-color: var(--white);
+  }
+  
+  .blogCategories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+  
+  .categoryButton {
+    padding: 8px 20px;
+    background-color: var(--light-bg);
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color);
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .categoryButton.active,
+  .categoryButton:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+  
+  .blogGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .blogCard {
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+  }
+  
+  .blogCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blogImage {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .blogImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .blogCard:hover .blogImage img {
+    transform: scale(1.05);
+  }
+  
+  .blogCategory {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  
+  .blogContent {
+    padding: 25px;
+  }
+  
+  .blogMeta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 0.85rem;
+    color: var(--light-text);
+  }
+  
+  .blogContent h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    color: var(--text-color);
+    transition: var(--transition);
+  }
+  
+  .blogCard:hover .blogContent h3 {
+    color: var(--primary-color);
+  }
+  
+  .blogContent p {
+    color: var(--light-text);
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .readMoreLink {
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: 600;
+    position: relative;
+    transition: var(--transition);
+  }
+  
+  .readMoreLink::after {
+    content: "→";
+    margin-left: 5px;
+    transition: var(--transition);
+  }
+  
+  .readMoreLink:hover {
+    color: var(--secondary-color);
+  }
+  
+  .readMoreLink:hover::after {
+    margin-left: 10px;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .pageButton {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-bg);
+    border-radius: 5px;
+    font-weight: 500;
+    color: var(--text-color);
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .pageButton.active,
+  .pageButton:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+  
+  .pageButton:last-child {
+    width: auto;
+    padding: 0 15px;
+  }
+  
+  .subscribeSection {
+    background-color: var(--light-bg);
+  }
+  
+  .subscribeContent {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .subscribeContent h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+  }
+  
+  .subscribeContent p {
+    color: var(--light-text);
+    margin-bottom: 30px;
+  }
+  
+  .subscribeForm {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .subscribeForm input {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    outline: none;
+    transition: var(--transition);
+  }
+  
+  .subscribeForm input:focus {
+    border-color: var(--primary-color);
+  }
+  
+  .subscribeForm button {
+    padding: 0 25px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 5px;
+    font-weight: 600;
+    transition: var(--transition);
+  }
+  
+  .subscribeForm button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .formDisclaimer {
+    font-size: 0.85rem;
+    color: var(--light-text);
+  }
+  
+  .formDisclaimer a {
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 992px) {
+    .blogGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .subscribeForm {
+      flex-direction: column;
+    }
+  
+    .subscribeForm button {
+      width: 100%;
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .blogGrid {
+      grid-template-columns: 1fr;
+    }
+  
+    .blogCategories {
+      gap: 10px;
+    }
+  
+    .categoryButton {
+      padding: 6px 15px;
+      font-size: 0.8rem;
+    }
+  }
+  

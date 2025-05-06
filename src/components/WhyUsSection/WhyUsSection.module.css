@@ -1,0 +1,88 @@
+.whyUsSection {
+    padding: 80px 0;
+    background-color: var(--light-bg);
+  }
+  
+  .sectionHeader {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+  }
+  
+  .sectionHeader h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .sectionHeader p {
+    color: var(--light-text);
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+  
+  .featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  .featureItem {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .featureItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .featureIcon {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    min-width: 50px;
+  }
+  
+  .featureContent h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--text-color);
+  }
+  
+  .featureContent p {
+    color: var(--light-text);
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 992px) {
+    .featuresGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .whyUsSection {
+      padding: 60px 0;
+    }
+  
+    .sectionHeader h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .featuresGrid {
+      grid-template-columns: 1fr;
+    }
+  
+    .featureItem {
+      padding: 20px;
+    }
+  }
+  

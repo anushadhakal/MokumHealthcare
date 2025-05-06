@@ -1,0 +1,148 @@
+.aboutSection {
+    background-color: var(--white);
+  }
+  
+  .aboutGrid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
+    align-items: center;
+  }
+  
+  .aboutContent h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .aboutContent h3 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin: 30px 0 15px;
+  }
+  
+  .aboutContent p {
+    color: var(--light-text);
+    margin-bottom: 15px;
+    line-height: 1.7;
+  }
+  
+  .aboutImage {
+    position: relative;
+  }
+  
+  .aboutImage img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .valuesSection {
+    background-color: var(--light-bg);
+  }
+  
+  .valuesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .valueCard {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+  }
+  
+  .valueCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .valueCard h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .valueCard h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--secondary-color);
+  }
+  
+  .valueCard p {
+    color: var(--light-text);
+    line-height: 1.7;
+  }
+  
+  .statsSection {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    padding: 60px 0;
+  }
+  
+  .statsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  
+  .statItem {
+    text-align: center;
+  }
+  
+  .statNumber {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .statLabel {
+    font-size: 1.1rem;
+    opacity: 0.9;
+  }
+  
+  @media (max-width: 992px) {
+    .aboutGrid {
+      grid-template-columns: 1fr;
+    }
+  
+    .aboutImage {
+      order: -1;
+    }
+  
+    .valuesGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .statsGrid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .valuesGrid {
+      grid-template-columns: 1fr;
+    }
+  
+    .statsGrid {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  
+    .aboutContent h2 {
+      font-size: 2rem;
+    }
+  }
+  
