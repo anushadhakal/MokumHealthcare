@@ -83,11 +83,11 @@ const Navbar = () => {
             </a>
           </div>
           <div className={styles.contactInfo}>
-            <a href="mailto:info@h1healthcare.com">
+            <a href="#">
               <FaEnvelope /> info@h1healthcare.com
             </a>
             <a href="tel:+61123456789">
-              <FaPhone /> +61 1234 56789
+              <FaPhone /> 888888888
             </a>
           </div>
         </div>
@@ -96,7 +96,7 @@ const Navbar = () => {
       <div className={`${styles.mainNav} ${isSticky ? styles.stickyNav : ""}`}>
         <div className={styles.container}>
           <Link to="/" className={styles.logo} onClick={closeMobileMenu}>
-            <img src="/placeholder.svg" alt="H1 Healthcare Logo" />
+            <img src="/placeholder.svg" alt="Mokum Healthcare Logo" />
           </Link>
 
           <div className={styles.mobileMenuToggle} onClick={toggleMobileMenu}>

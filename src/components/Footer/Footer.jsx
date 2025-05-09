@@ -12,21 +12,21 @@ const Footer = () => {
         <div className="container">
           <div className={styles.footerGrid}>
             <div className={styles.footerWidget}>
-              <h3>About H1 Healthcare</h3>
+              <h3>About Mokum Healthcare</h3>
               <p>
-                A leading provider of healthcare staffing across Australia, offering permanent, contract, and casual workforce solutions.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, amet!
               </p>
               <div className={styles.socialLinks}>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <a href="#" target="_blank" rel="noopener noreferrer">
                   <FaFacebook />
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <a href="#" target="_blank" rel="noopener noreferrer">
                   <FaInstagram />
                 </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                <a href="#" target="_blank" rel="noopener noreferrer">
                   <FaTwitter />
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <a href="#" target="_blank" rel="noopener noreferrer">
                   <FaLinkedin />
                 </a>
               </div>
@@ -72,43 +72,27 @@ const Footer = () => {
               <h3>Contact Us</h3>
               <ul className={styles.contactInfo}>
                 <li>
-                  <FaMapMarkerAlt /> 123 Healthcare Street, Sydney, NSW 2000
+                  <FaMapMarkerAlt /> Lorem ipsum dolor sit amet.
                 </li>
                 <li>
-                  <FaPhone /> +61 1234 56789
+                  <FaPhone /> 8888888
                 </li>
                 <li>
-                  <FaEnvelope /> info@h1healthcare.com
+                  <FaEnvelope /> 
                 </li>
               </ul>
             </div>
           </div>
 
-          <div className={styles.newsletterSection}>
-            <h3>Subscribe to Our Newsletter</h3>
-            <p>Stay updated with our latest news and offers</p>
-            <form className={styles.newsletterForm}>
-              <div className={styles.formGroup}>
-                <input type="text" placeholder="Your Name" required />
-              </div>
-              <div className={styles.formGroup}>
-                <input type="email" placeholder="Your Email" required />
-              </div>
-              <button type="submit" className={styles.subscribeBtn}>Subscribe</button>
-            </form>
-          </div>
+         
         </div>
       </div>
 
       <div className={styles.footerBottom}>
         <div className="container">
           <div className={styles.footerBottomContent}>
-            <p>&copy; {currentYear} H1 Healthcare. All Rights Reserved.</p>
-            <div className={styles.footerLinks}>
-              <Link to="/privacy-policy">Privacy Policy</Link>
-              <Link to="/cookie-policy">Cookie Policy</Link>
-              <Link to="/terms-of-service">Terms of Service</Link>
-            </div>
+            <p>&copy; {currentYear} Mokum Healthcare. All Rights Reserved.</p>
+           
           </div>
         </div>
       </div>

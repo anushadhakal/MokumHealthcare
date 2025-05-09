@@ -13,11 +13,7 @@ const WhyUsSection = () => {
       title: "Booking Flexibility",
       description: "Flexible booking options to accommodate your schedule and requirements.",
     },
-    {
-      icon: <FaCertificate />,
-      title: "NDIS Certified",
-      description: "We are fully certified and compliant with NDIS standards and regulations.",
-    },
+   
     {
       icon: <FaUserNurse />,
       title: "Skilled Workforce",

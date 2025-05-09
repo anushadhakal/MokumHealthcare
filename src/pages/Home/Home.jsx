@@ -13,8 +13,8 @@ const Home = () => {
     <main>
       <HeroSection
         backgroundImage="https://placehold.co/600x400"
-        title="A leading provider of healthcare staffing across Australia"
-        subtitle="Offering permanent, contract, and casual workforce solutions"
+        title="lorem ipsum dolor sit amet"
+        subtitle="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         buttonText="Learn More"
         buttonLink="/about/overview"
       />
@@ -27,7 +27,7 @@ const Home = () => {
           <div className={styles.servicesGrid}>
             <ServiceCard
               icon={<FaUserNurse />}
-              title="Staffing Solutions"
+              title="Staffing "
               description="24/7 casual workforce available to meet your immediate and ongoing staffing needs across healthcare sectors."
               link="/industry/overview"
               linkText="Learn More"
@@ -58,14 +58,14 @@ const Home = () => {
           <div className={styles.industryCards}>
             <IndustryCard
               image="https://placehold.co/600x400"
-              title="Disability Care"
-              description="Qualified support staff for the disability sector, providing compassionate and professional care to enhance quality of life."
+              title="lorem ipsum dolor sit amet"
+              description="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
               link="/industry/disability-care"
             />
             <IndustryCard
               image="https://placehold.co/600x400"
-              title="Aged Care"
-              description="Immediate access to high-quality aged care nurses and support workers, ensuring dignified and personalized care for seniors."
+              title="lorem ipsum dolor sit amet"
+              description="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
               link="/industry/aged-care"
               isReversed={true}
             />

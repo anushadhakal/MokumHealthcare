@@ -128,25 +128,6 @@ const AgedCare = () => {
           </div>
         </div>
       </section>
-
-      <section className={`section ${styles.testimonialSection}`}>
-        <div className="container">
-          <div className={styles.testimonialCard}>
-            <div className={styles.quoteIcon}>"</div>
-            <p className={styles.quoteText}>
-              We've been partnering with H1 Healthcare for our aged care staffing needs for over three years, and their
-              service has been exceptional. Their nurses and care staff are highly skilled, compassionate, and reliable.
-              They understand the unique challenges of aged care and consistently provide staff who fit seamlessly into
-              our team and uphold our values of dignity and respect for our residents.
-            </p>
-            <div className={styles.authorInfo}>
-              <h4>Margaret Thompson</h4>
-              <p>Director of Nursing, Serenity Aged Care</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className={`section ${styles.ctaSection}`}>
         <div className="container">
           <div className={styles.ctaContent}>
