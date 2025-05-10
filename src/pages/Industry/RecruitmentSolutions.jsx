@@ -7,7 +7,7 @@ const RecruitmentSolutions = () => {
   return (
     <main>
       <HeroSection
-        backgroundImage={recruitmentHeroImage}
+        backgroundImage="https://placehold.co/600x400"
         title="Healthcare Recruitment Solutions"
         subtitle="Finding the perfect healthcare professionals for your organization"
         buttonText="Contact Us"
@@ -19,7 +19,7 @@ const RecruitmentSolutions = () => {
           <div className={styles.serviceContent}>
             <h2>Comprehensive Healthcare Recruitment</h2>
             <p>
-              H1 Healthcare offers specialized recruitment solutions designed to find the perfect healthcare
+              Mokum Healthcare offers specialized recruitment solutions designed to find the perfect healthcare
               professionals for your organization. We understand the unique challenges of healthcare recruitment and
               have developed a comprehensive approach that goes beyond simply filling vacancies.
             </p>
@@ -132,7 +132,7 @@ const RecruitmentSolutions = () => {
           <div className={styles.testimonialCard}>
             <div className={styles.quoteIcon}>"</div>
             <p className={styles.quoteText}>
-              H1 Healthcare's recruitment team has been instrumental in helping us build a strong clinical team. Their
+              Mokum Healthcare's recruitment team has been instrumental in helping us build a strong clinical team. Their
               understanding of our organizational culture and the specific skills we need has resulted in consistently
               high-quality placements. Their thorough screening process and attention to detail have saved us
               significant time and resources in our hiring process.

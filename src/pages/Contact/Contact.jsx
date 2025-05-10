@@ -72,7 +72,7 @@ const Contact = () => {
                   </div>
                   <div className={styles.contactText}>
                     <h3>Our Location</h3>
-                    <p>123 Healthcare Street, Sydney, NSW 2000, Australia</p>
+                    <p>Sydney, Australia</p>
                   </div>
                 </div>
 
@@ -82,7 +82,7 @@ const Contact = () => {
                   </div>
                   <div className={styles.contactText}>
                     <h3>Phone Number</h3>
-                    <p>+61 1234 56789</p>
+                    <p>88888888</p>
                   </div>
                 </div>
 
@@ -92,7 +92,7 @@ const Contact = () => {
                   </div>
                   <div className={styles.contactText}>
                     <h3>Email Address</h3>
-                    <p>info@h1healthcare.com</p>
+                    <p>abc@example.com</p>
                   </div>
                 </div>
 
@@ -184,7 +184,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className={styles.mapSection}>
+      {/* <section className={styles.mapSection}>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26512.19357862248!2d151.20000000000002!3d-33.865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae401e8b983f%3A0x5017d681632ccc0!2sSydney%20NSW%202000%2C%20Australia!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
           width="100%"
@@ -192,43 +192,11 @@ const Contact = () => {
           style={{ border: 0 }}
           allowFullScreen=""
           loading="lazy"
-          title="H1 Healthcare Location"
+          title="Mokum Healthcare Location"
         ></iframe>
-      </section>
+      </section> */}
 
-      <section className={`section ${styles.officesSection}`}>
-        <div className="container">
-          <h2 className="section-title">Our Offices</h2>
-          <p className="section-subtitle">Find H1 Healthcare in locations across Australia</p>
-
-          <div className={styles.officesGrid}>
-            <div className={styles.officeCard}>
-              <h3>Sydney (Head Office)</h3>
-              <p>123 Healthcare Street, Sydney, NSW 2000</p>
-              <p>Phone: +61 1234 56789</p>
-              <p>Email: sydney@h1healthcare.com</p>
-            </div>
-            <div className={styles.officeCard}>
-              <h3>Melbourne</h3>
-              <p>456 Medical Avenue, Melbourne, VIC 3000</p>
-              <p>Phone: +61 2345 67890</p>
-              <p>Email: melbourne@h1healthcare.com</p>
-            </div>
-            <div className={styles.officeCard}>
-              <h3>Brisbane</h3>
-              <p>789 Care Boulevard, Brisbane, QLD 4000</p>
-              <p>Phone: +61 3456 78901</p>
-              <p>Email: brisbane@h1healthcare.com</p>
-            </div>
-            <div className={styles.officeCard}>
-              <h3>Perth</h3>
-              <p>101 Nursing Road, Perth, WA 6000</p>
-              <p>Phone: +61 4567 89012</p>
-              <p>Email: perth@h1healthcare.com</p>
-            </div>
-          </div>
-        </div>
-      </section>
+     
     </main>
   )
 }

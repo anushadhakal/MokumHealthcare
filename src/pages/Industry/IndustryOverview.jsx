@@ -20,7 +20,7 @@ const IndustryOverview = () => {
           <div className={styles.overviewContent}>
             <h2>Healthcare Staffing Excellence</h2>
             <p>
-              At H1 Healthcare, we understand that different healthcare sectors have unique staffing requirements and
+              At Mokum Healthcare, we understand that different healthcare sectors have unique staffing requirements and
               challenges. That's why we've developed specialized services tailored to the specific needs of disability
               care, aged care, and healthcare recruitment.
             </p>

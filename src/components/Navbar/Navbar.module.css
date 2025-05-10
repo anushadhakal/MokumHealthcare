@@ -67,9 +67,9 @@
     text-decoration: none;
   }
   
-  .contactInfo a:hover {
+  /* .contactInfo a:hover {
     color: var(--accent-color);
-  }
+  } */
   
   /* Main navigation */
   .mainNav {

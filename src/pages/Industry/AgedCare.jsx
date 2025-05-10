@@ -19,7 +19,7 @@ const AgedCare = () => {
           <div className={styles.serviceContent}>
             <h2>Excellence in Aged Care Staffing</h2>
             <p>
-              H1 Healthcare is committed to supporting aged care providers with high-quality staffing solutions that
+              Mokum Healthcare is committed to supporting aged care providers with high-quality staffing solutions that
               enhance the quality of care for seniors. We understand the unique challenges faced by the aged care sector
               and provide immediate access to skilled nurses and support workers who are experienced in delivering
               compassionate, dignified care to older Australians.

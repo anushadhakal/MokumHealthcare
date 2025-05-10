@@ -1,201 +1,348 @@
+/* Approach Section - Modern Card Design */
 .approachSection {
-    background-color: var(--white);
-  }
-  
+  background-color: var(--white);
+  padding: 90px 0;
+  position: relative;
+}
+
+.approachSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(var(--light-bg) 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.approachGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.approachItem {
+  background: linear-gradient(145deg, #ffffff, #f5f7fa);
+ 
+  padding: 30px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05), 
+              -5px -5px 15px rgba(255, 255, 255, 0.8);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--primary-color);
+  border-radius: 60px 0px 60px 0px ;
+}
+
+.approachItem::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.4s ease;
+}
+
+.approachItem:hover {
+  transform: translateY(-10px);
+  box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.08), 
+              -8px -8px 25px rgba(255, 255, 255, 0.9);
+}
+
+.approachItem:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.approachNumber {
+  font-size: 5.5rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  opacity: 0.15;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  line-height: 0.8;
+  font-family: 'Arial', sans-serif;
+}
+
+.approachItem h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 18px;
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+  padding-bottom: 12px;
+}
+
+.approachItem h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: var(--secondary-color);
+  opacity: 0.7;
+}
+
+.approachItem p {
+  color: var(--light-text);
+  line-height: 1.8;
+  position: relative;
+  z-index: 1;
+  font-size: 1.05rem;
+}
+
+/* Testimonials Section - Modern Card Design */
+.testimonialsSection {
+  background-color: var(--light-bg);
+  padding: 90px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonialsSection::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  opacity: 0.05;
+}
+
+.testimonialsSection::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+  opacity: 0.05;
+}
+
+.testimonialsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonialCard {
+  background-color: var(--white);
+  border-radius: 90px 0px 90px 0px ;
+  padding: 35px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+
+
+.testimonialCard:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.quoteIcon {
+  font-size: 7rem;
+  line-height: 0.6;
+  color: var(--secondary-color);
+  opacity: 0.08;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-family: 'Georgia', serif;
+  transform: rotate(180deg);
+}
+
+.quoteText {
+  font-style: italic;
+  color: var(--text-color);
+  margin-bottom: 25px;
+  line-height: 1.8;
+  position: relative;
+  z-index: 1;
+  font-size: 1.1rem;
+}
+
+.authorInfo {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding-top: 20px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.authorInfo::before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
+  opacity: 0.1;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.authorInfo h4 {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.authorInfo p {
+  color: var(--light-text);
+  font-size: 0.95rem;
+}
+
+/* Keep the rest of your CSS the same */
+.ctaSection {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: var(--white);
+  text-align: center;
+}
+
+.ctaContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ctaContent h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.ctaContent p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.ctaButtons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.primaryBtn {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
+
+.primaryBtn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-3px);
+}
+
+.secondaryBtn {
+  background-color: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+.secondaryBtn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 992px) {
   .approachGrid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    margin-top: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
   }
-  
-  .approachItem {
-    background-color: var(--light-bg);
-    border-radius: 8px;
-    padding: 30px;
-    transition: var(--transition);
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .approachItem:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  }
-  
-  .approachNumber {
-    font-size: 4rem;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 0.05);
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    line-height: 1;
+
+  .testimonialsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
   }
   
   .approachItem h3 {
-    font-size: 1.3rem;
-    color: var(--primary-color);
-    margin-bottom: 15px;
-    position: relative;
-    z-index: 1;
+    font-size: 1.4rem;
   }
-  
-  .approachItem p {
-    color: var(--light-text);
-    line-height: 1.7;
-    position: relative;
-    z-index: 1;
-  }
-  
+}
+
+@media (max-width: 768px) {
+  .approachSection,
   .testimonialsSection {
-    background-color: var(--light-bg);
+    padding: 70px 0;
   }
   
+  .ctaButtons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .primaryBtn,
+  .secondaryBtn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .approachNumber {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .approachGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
   .testimonialsGrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-top: 30px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .approachItem {
+    padding: 30px 25px;
   }
   
   .testimonialCard {
-    background-color: var(--white);
-    border-radius: 8px;
-    padding: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: var(--transition);
-    position: relative;
-  }
-  
-  .testimonialCard:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 35px 25px;
   }
   
   .quoteIcon {
     font-size: 5rem;
-    line-height: 1;
-    color: var(--secondary-color);
-    opacity: 0.2;
-    position: absolute;
     top: 20px;
-    left: 20px;
+    right: 20px;
   }
   
-  .quoteText {
-    font-style: italic;
-    color: var(--text-color);
-    margin-bottom: 20px;
-    line-height: 1.7;
-    position: relative;
-    z-index: 1;
+  .authorInfo::before {
+    width: 30px;
+    height: 30px;
   }
-  
-  .authorInfo {
-    border-top: 1px solid var(--border-color);
-    padding-top: 15px;
-  }
-  
-  .authorInfo h4 {
-    font-size: 1.1rem;
-    color: var(--primary-color);
-    margin-bottom: 5px;
-  }
-  
-  .authorInfo p {
-    color: var(--light-text);
-    font-size: 0.9rem;
-  }
-  
-  .ctaSection {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: var(--white);
-    text-align: center;
-  }
-  
-  .ctaContent {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .ctaContent h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .ctaContent p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    opacity: 0.9;
-  }
-  
-  .ctaButtons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .primaryBtn,
-  .secondaryBtn {
-    display: inline-block;
-    padding: 15px 30px;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: var(--transition);
-  }
-  
-  .primaryBtn {
-    background-color: var(--white);
-    color: var(--primary-color);
-  }
-  
-  .primaryBtn:hover {
-    background-color: rgba(255, 255, 255, 0.9);
-    transform: translateY(-3px);
-  }
-  
-  .secondaryBtn {
-    background-color: transparent;
-    color: var(--white);
-    border: 2px solid var(--white);
-  }
-  
-  .secondaryBtn:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    transform: translateY(-3px);
-  }
-  
-  @media (max-width: 992px) {
-    .approachGrid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .testimonialsGrid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .ctaButtons {
-      flex-direction: column;
-      gap: 15px;
-    }
-  
-    .primaryBtn,
-    .secondaryBtn {
-      width: 100%;
-      text-align: center;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .approachGrid {
-      grid-template-columns: 1fr;
-    }
-  
-    .testimonialsGrid {
-      grid-template-columns: 1fr;
-    }
-  }
-  
+}

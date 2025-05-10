@@ -39,13 +39,14 @@ const Home = () => {
               link="/industry/recruitment-solutions"
               linkText="Learn More"
             />
-            <ServiceCard
-              icon={<FaBriefcase />}
-              title="We're Hiring"
-              description="Join our team as Agency, Contract, or Permanent staff and build your career with a leading healthcare provider."
-              link="/careers"
-              linkText="Apply Now"
+             <ServiceCard
+              icon={<FaUserNurse />}
+              title="Staffing "
+              description="24/7 casual workforce available to meet your immediate and ongoing staffing needs across healthcare sectors."
+              link="/industry/overview"
+              linkText="Learn More"
             />
+           
           </div>
         </div>
       </section>
@@ -58,13 +59,13 @@ const Home = () => {
           <div className={styles.industryCards}>
             <IndustryCard
               image="https://placehold.co/600x400"
-              title="lorem ipsum dolor sit amet"
+              title="Disability Care"
               description="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
               link="/industry/disability-care"
             />
             <IndustryCard
               image="https://placehold.co/600x400"
-              title="lorem ipsum dolor sit amet"
+              title="Aged Care"
               description="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
               link="/industry/aged-care"
               isReversed={true}

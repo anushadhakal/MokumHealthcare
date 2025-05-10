@@ -83,7 +83,7 @@ const DisabilityCare = () => {
           <div className={styles.testimonialCard}>
             <div className={styles.quoteIcon}>"</div>
             <p className={styles.quoteText}>
-              H1 Healthcare has been instrumental in helping us maintain high-quality care standards for our clients.
+              Mokum Healthcare has been instrumental in helping us maintain high-quality care standards for our clients.
               Their disability support workers are not only skilled but also genuinely passionate about making a
               positive difference in the lives of people with disabilities. Their understanding of the NDIS and
               disability sector is exceptional.

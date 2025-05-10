@@ -1,25 +1,26 @@
 import HeroSection from "../../components/HeroSection/HeroSection"
 import WhyUsSection from "../../components/WhyUsSection/WhyUsSection"
-import styles from "./About.module.css"
-// import whyUsHeroImage from "../../assets/images/why-us-hero.jpg"
+// import styles from "./About.module.css"
+import styles from "./WhyUs.module.css"
+
 
 const WhyUs = () => {
   const testimonials = [
     {
       quote:
-        "H1 Healthcare has been an invaluable partner in meeting our staffing needs. Their professionals are highly skilled and reliable, and their team is responsive and easy to work with.",
+        "Mokum Healthcare has been an invaluable partner in meeting our staffing needs. Their professionals are highly skilled and reliable, and their team is responsive and easy to work with.",
       author: "Sarah Johnson",
       position: "Director of Nursing, Melbourne General Hospital",
     },
     {
       quote:
-        "We've been working with H1 Healthcare for over 5 years, and they consistently provide exceptional candidates who fit perfectly with our team and culture. Their understanding of the aged care sector is outstanding.",
+        "We've been working with Mokum Healthcare for over 5 years, and they consistently provide exceptional candidates who fit perfectly with our team and culture. Their understanding of the aged care sector is outstanding.",
       author: "Michael Thompson",
       position: "Facility Manager, Sunshine Aged Care",
     },
     {
       quote:
-        "As a disability service provider, finding qualified staff who are both skilled and compassionate is crucial. H1 Healthcare has never let us down, providing outstanding professionals who make a real difference in our clients' lives.",
+        "As a disability service provider, finding qualified staff who are both skilled and compassionate is crucial. Mokum Healthcare has never let us down, providing outstanding professionals who make a real difference in our clients' lives.",
       author: "Emma Wilson",
       position: "Operations Manager, Ability Support Services",
     },
@@ -29,7 +30,7 @@ const WhyUs = () => {
     <main>
       <HeroSection
         backgroundImage="https://placehold.co/600x400"
-        title="Why Choose H1 Healthcare"
+        title="Why Choose Mokum Healthcare"
         subtitle="Discover what sets us apart as Australia's leading healthcare staffing provider"
       />
 
@@ -85,7 +86,7 @@ const WhyUs = () => {
           <div className={styles.testimonialsGrid}>
             {testimonials.map((testimonial, index) => (
               <div className={styles.testimonialCard} key={index}>
-                <div className={styles.quoteIcon}>"</div>
+                {/* <div className={styles.quoteIcon}>"</div> */}
                 <p className={styles.quoteText}>{testimonial.quote}</p>
                 <div className={styles.authorInfo}>
                   <h4>{testimonial.author}</h4>
@@ -100,7 +101,7 @@ const WhyUs = () => {
       <section className={`section ${styles.ctaSection}`}>
         <div className="container">
           <div className={styles.ctaContent}>
-            <h2>Ready to experience the H1 Healthcare difference?</h2>
+            <h2>Ready to experience the Mokum Healthcare difference?</h2>
             <p>
               Contact our team today to discuss how we can meet your healthcare staffing needs with our exceptional
               professionals and personalized service.

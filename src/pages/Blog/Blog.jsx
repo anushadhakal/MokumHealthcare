@@ -10,7 +10,7 @@ const Blog = () => {
   return (
     <div>
       <HeroSection
-        title="H1 Healthcare Blog"
+        title="Mokum Healthcare Blog"
         subtitle="Insights, trends, and best practices in healthcare staffing and service delivery"
       />
 

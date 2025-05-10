@@ -84,7 +84,7 @@ const Navbar = () => {
           </div>
           <div className={styles.contactInfo}>
             <a href="#">
-              <FaEnvelope /> info@h1healthcare.com
+              <FaEnvelope /> abc@example.com
             </a>
             <a href="tel:+61123456789">
               <FaPhone /> 888888888

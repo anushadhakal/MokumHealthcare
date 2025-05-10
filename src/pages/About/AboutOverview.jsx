@@ -8,7 +8,7 @@ const AboutOverview = () => {
     <main>
       <HeroSection
         backgroundImage="https://placehold.co/600x400"
-        title="About H1 Healthcare"
+        title="About Mokum Healthcare"
         subtitle="Learn about our mission, vision, and commitment to excellence in healthcare staffing"
       />
 
@@ -18,31 +18,24 @@ const AboutOverview = () => {
             <div className={styles.aboutContent}>
               <h2>Our Story</h2>
               <p>
-                Founded in 2010, H1 Healthcare has grown to become one of Australia's leading healthcare staffing
-                providers. What started as a small agency with a handful of dedicated professionals has evolved into a
-                nationwide organization serving healthcare facilities across metropolitan, regional, and remote areas of
-                Australia.
+               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui maiores voluptas aut inventore sapiente accusamus iste labore veniam magni quas dignissimos, eaque non eligendi debitis laboriosam esse commodi saepe quasi.
               </p>
               <p>
-                Our journey has been driven by a commitment to excellence, integrity, and a deep understanding of the
-                healthcare sector's unique challenges. We've built our reputation on providing reliable, high-quality
-                staffing solutions that meet the diverse needs of our clients and the communities they serve.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque ea odit molestias quidem repellat nulla voluptatem illo accusamus aut deserunt impedit sint et provident adipisci consequuntur enim, odio sit aliquid tenetur magnam ullam repellendus inventore. Sint unde natus nesciunt ipsa?
               </p>
 
               <h3>Our Mission</h3>
               <p>
-                To provide exceptional healthcare staffing solutions that enhance the quality of care, improve
-                operational efficiency, and contribute to better health outcomes for all Australians.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, esse consequuntur deserunt unde blanditiis quisquam similique earum nihil accusamus impedit perspiciatis nesciunt quis natus repellat, explicabo laboriosam, velit dignissimos cumque.
               </p>
 
               <h3>Our Vision</h3>
               <p>
-                To be Australia's most trusted healthcare staffing partner, recognized for our commitment to excellence,
-                innovation, and positive impact on the healthcare system.
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad explicabo rem optio eaque aliquid ab excepturi a tenetur esse. Repellendus voluptas est cupiditate minima saepe aperiam sint, praesentium vitae eius?
               </p>
             </div>
             <div className={styles.aboutImage}>
-              <img src="https://placehold.co/600x400" alt="About H1 Healthcare" />
+              <img src="https://placehold.co/600x400" alt="About Mokum Healthcare" />
             </div>
           </div>
         </div>

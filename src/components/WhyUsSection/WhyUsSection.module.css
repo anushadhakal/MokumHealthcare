@@ -25,6 +25,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+  
   }
   
   .featureItem {
@@ -36,6 +37,7 @@
     display: flex;
     align-items: flex-start;
     gap: 20px;
+      border-radius: 60px 0px 60px 0px ;
   }
   
   .featureItem:hover {
