@@ -13,22 +13,17 @@ const Navbar = () => {
       setIsSticky(window.scrollY > 100);
     };
 
-    // Add event listener
     window.addEventListener("scroll", handleScroll);
-    
-    // Clean up the event listener
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
-    // Prevent body scrolling when mobile menu is open
     if (mobileMenuOpen) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = '';
     }
     
-    // Clean up when component unmounts
     return () => {
       document.body.style.overflow = '';
     };
@@ -36,6 +31,9 @@ const Navbar = () => {
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
+    if (!mobileMenuOpen) {
+      setActiveDropdown(null);
+    }
   };
 
   const toggleDropdown = (dropdown) => {
@@ -46,29 +44,6 @@ const Navbar = () => {
     setMobileMenuOpen(false);
     setActiveDropdown(null);
   };
-
-  // Close dropdown and mobile menu when clicking outside
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      // Check if clicked outside dropdown areas
-      const isDropdownClick = event.target.closest(`.${styles.dropdown}`);
-      const isMenuClick = event.target.closest(`.${styles.navMenu}`);
-      const isToggleClick = event.target.closest(`.${styles.mobileMenuToggle}`);
-      
-      if (!isDropdownClick && !isToggleClick && activeDropdown) {
-        setActiveDropdown(null);
-      }
-      
-      if (!isMenuClick && !isToggleClick && mobileMenuOpen && window.innerWidth <= 992) {
-        closeMobileMenu();
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [activeDropdown, mobileMenuOpen]);
 
   return (
     <header className={`${styles.header} ${isSticky ? styles.sticky : ""}`}>
@@ -83,7 +58,7 @@ const Navbar = () => {
             </a>
           </div>
           <div className={styles.contactInfo}>
-            <a href="#">
+            <a href="mailto:abc@example.com">
               <FaEnvelope /> abc@example.com
             </a>
             <a href="tel:+61123456789">
@@ -99,78 +74,80 @@ const Navbar = () => {
             <img src="/placeholder.svg" alt="Mokum Healthcare Logo" />
           </Link>
 
-          <div className={styles.mobileMenuToggle} onClick={toggleMobileMenu}>
+          <button className={styles.mobileMenuToggle} onClick={toggleMobileMenu} aria-label="Toggle menu">
             {mobileMenuOpen ? <FaTimes /> : <FaBars />}
-          </div>
+          </button>
 
           <nav className={`${styles.navMenu} ${mobileMenuOpen ? styles.active : ""}`}>
             <ul>
               <li>
-                <NavLink to="/" end onClick={closeMobileMenu}>
+                <NavLink to="/" end onClick={closeMobileMenu} className={({ isActive }) => isActive ? styles.activeLink : ""}>
                   Home
                 </NavLink>
               </li>
               <li className={styles.dropdown}>
-                <div 
-                  className={styles.dropdownToggle} 
+                <button 
+                  className={`${styles.dropdownToggle} ${activeDropdown === "about" ? styles.activeDropdown : ""}`}
                   onClick={() => toggleDropdown("about")}
+                  aria-expanded={activeDropdown === "about"}
                 >
-                  About Us <FaChevronDown />
-                </div>
+                  About Us <FaChevronDown className={styles.dropdownIcon} />
+                </button>
                 <div className={`${styles.dropdownMenu} ${activeDropdown === "about" ? styles.show : ""}`}>
                   <ul>
                     <li>
                       <NavLink to="/about/overview" onClick={closeMobileMenu}>
-                        <FaAngleRight /> Overview
+                        <FaAngleRight className={styles.angleIcon} /> Overview
                       </NavLink>
                     </li>
                     <li>
                       <NavLink to="/about/why-us" onClick={closeMobileMenu}>
-                        <FaAngleRight /> Why Us
+                        <FaAngleRight className={styles.angleIcon} /> Why Us
                       </NavLink>
                     </li>
                   </ul>
                 </div>
               </li>
               <li className={styles.dropdown}>
-                <div 
-                  className={styles.dropdownToggle} 
+                <button 
+                  className={`${styles.dropdownToggle} ${activeDropdown === "industry" ? styles.activeDropdown : ""}`}
                   onClick={() => toggleDropdown("industry")}
+                  aria-expanded={activeDropdown === "industry"}
                 >
-                  Industry <FaChevronDown />
-                </div>
+                  Industry <FaChevronDown className={styles.dropdownIcon} />
+                </button>
                 <div className={`${styles.dropdownMenu} ${activeDropdown === "industry" ? styles.show : ""}`}>
                   <ul>
                     <li>
                       <NavLink to="/industry/overview" onClick={closeMobileMenu}>
-                        <FaAngleRight /> Overview
+                        <FaAngleRight className={styles.angleIcon} /> Overview
                       </NavLink>
                     </li>
                     <li>
                       <NavLink to="/industry/disability-care" onClick={closeMobileMenu}>
-                        <FaAngleRight /> Disability Care
+                        <FaAngleRight className={styles.angleIcon} /> Disability Care
                       </NavLink>
                     </li>
                     <li>
                       <NavLink to="/industry/aged-care" onClick={closeMobileMenu}>
-                        <FaAngleRight /> Aged Care
+                        <FaAngleRight className={styles.angleIcon} /> Aged Care
                       </NavLink>
                     </li>
                     <li>
                       <NavLink to="/industry/recruitment-solutions" onClick={closeMobileMenu}>
-                        <FaAngleRight /> Recruitment Solutions
+                        <FaAngleRight className={styles.angleIcon} /> Recruitment Solutions
                       </NavLink>
                     </li>
                   </ul>
                 </div>
               </li>
               <li>
-                <NavLink to="/blog" onClick={closeMobileMenu}>
+                <NavLink to="/blog" onClick={closeMobileMenu} className={({ isActive }) => isActive ? styles.activeLink : ""}>
                   Blog
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/contact" onClick={closeMobileMenu}>
+                <NavLink to="/contact" onClick={closeMobileMenu} className={({ isActive }) => isActive ? styles.activeLink : ""}>
                   Contact Us
                 </NavLink>
               </li>
@@ -178,6 +155,11 @@ const Navbar = () => {
           </nav>
         </div>
       </div>
+      
+      {/* Overlay for mobile menu */}
+      {mobileMenuOpen && (
+        <div className={styles.mobileOverlay} onClick={closeMobileMenu}></div>
+      )}
     </header>
   );
 };
