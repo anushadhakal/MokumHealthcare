@@ -57,13 +57,13 @@ const Footer = () => {
               <h3>Our Services</h3>
               <ul className={styles.quickLinks}>
                 <li>
-                  <Link to="/industry/disability-care">Disability Care</Link>
+                  <Link to="/industry/HomeCare">Home Care</Link>
                 </li>
                 <li>
-                  <Link to="/industry/aged-care">Aged Care</Link>
+                  <Link to="/industry/NDISDisability">NDIS Disability</Link>
                 </li>
                 <li>
-                  <Link to="/industry/recruitment-solutions">Recruitment Solutions</Link>
+                  <Link to="/industry/WorkforceSolutions">Workforce Solutions</Link>
                 </li>
               </ul>
             </div>
@@ -84,19 +84,20 @@ const Footer = () => {
             </div>
           </div>
 
-         
+
         </div>
       </div>
 
       <div className={styles.footerBottom}>
         <div className="container">
           <div className={styles.footerBottomContent}>
-            <p>&copy; {currentYear} Mokum Healthcare. All Rights Reserved.</p>
-           
+            <p>&copy; {currentYear} Mokum Healthcare. All Rights Reserved. </p>
+        
           </div>
+            <p className={styles.footerBottomContent} > Powered By: <a href="https://birtasoft.com" target="_blank" rel="noopener noreferrer">Birta Soft</a></p>
         </div>
       </div>
-    </footer>
+    </footer> 
   );
 };
 
