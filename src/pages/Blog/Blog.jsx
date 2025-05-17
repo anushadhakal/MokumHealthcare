@@ -18,9 +18,9 @@ const Blog = () => {
         <div className="container">
           <div className={styles.blogCategories}>
             <button className={`${styles.categoryButton} ${styles.active}`}>All</button>
-            <button className={styles.categoryButton}>Disability Care</button>
-            <button className={styles.categoryButton}>Aged Care</button>
-            <button className={styles.categoryButton}>Recruitment</button>
+            <button className={styles.categoryButton}>Home Care</button>
+            <button className={styles.categoryButton}>NDIS Disability</button>
+            <button className={styles.categoryButton}>Workforce Solution</button>
             <button className={styles.categoryButton}>Career Development</button>
           </div>
 
