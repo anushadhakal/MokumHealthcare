@@ -4,10 +4,10 @@ import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
 import AboutOverview from "./pages/About/AboutOverview";
 import WhyUs from "./pages/About/WhyUs";
-import IndustryOverview from "./pages/Industry/IndustryOverview";
-import DisabilityCare from "./pages/Industry/DisabilityCare";
-import AgedCare from "./pages/Industry/AgedCare";
-import RecruitmentSolutions from "./pages/Industry/RecruitmentSolutions";
+import HomeCare from "./pages/Industry/HomeCare";
+import NDISDisability from "./pages/Industry/NDISDisability";
+
+import WorkforceSolutions from "./pages/Industry/WorkforceSolutions";
 import Blog from "./pages/Blog/Blog";
 import Contact from "./pages/Contact/Contact";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
@@ -25,10 +25,10 @@ function App() {
             <Route path="why-us" element={<WhyUs />} />
           </Route>
           <Route path="/industry">
-            <Route path="overview" element={<IndustryOverview />} />
-            <Route path="disability-care" element={<DisabilityCare />} />
-            <Route path="aged-care" element={<AgedCare />} />
-            <Route path="recruitment-solutions" element={<RecruitmentSolutions />} />
+            <Route path="HomeCare" element={<HomeCare />} />
+            <Route path="NDISDisability" element={<NDISDisability />} />
+           
+            <Route path="WorkforceSolutions" element={<WorkforceSolutions />} />
           </Route>
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />

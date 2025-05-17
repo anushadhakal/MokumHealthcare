@@ -6,7 +6,7 @@
 
 /* Top bar section */
 .topBar {
-  background-color: var(--primary-color);
+  background-color: rgb(76 33 119 );
   color: var(--white);
   padding: 10px 0;
 }
@@ -101,7 +101,7 @@
 
 .navMenu a:hover,
 .navMenu a.activeLink {
-  color: var(--primary-color);
+  color: rgb(76 33 119 );
 }
 
 .navMenu a.activeLink::after {
@@ -111,7 +111,7 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: var(--primary-color);
+  background-color: rgb(76 33 119 );
 }
 
 /* Dropdown menu - Vertical Layout */
@@ -135,7 +135,7 @@
 }
 
 .dropdownToggle:hover {
-  color: var(--primary-color);
+  color: rgb(76 33 119 );
 }
 
 .dropdownIcon {
@@ -282,7 +282,7 @@
   position: relative;
   z-index: 1;
   font-weight: 400;
-  border-left: 0px solid var(--primary-color);
+  border-left: 0px solid rgb(76 33 119 );
   width: 100%;
   box-sizing: border-box;
   text-decoration: none;
@@ -290,8 +290,8 @@
 
 .dropdownMenu a:hover {
   background-color: rgba(var(--primary-color-rgb), 0.08);
-  color: var(--primary-color);
-  border-left: 5px solid var(--primary-color);
+  color: rgb(76 33 119 );
+  border-left: 5px solid rgb(76 33 119 );
   padding-left: 25px;
 }
 
@@ -412,7 +412,7 @@
     max-height: 500px;
     margin-top: 10px;
     padding: 5px 0;
-    border-left: 2px solid var(--primary-color);
+    border-left: 2px solid rgb(76 33 119 );
   }
   
   /* Reset mobile dropdown item animations */

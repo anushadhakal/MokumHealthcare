@@ -1,6 +1,6 @@
 /* Global Variables */
 :root {
-  --primary-blue: #1a75bc;
+  --primary-blue: #c77dff;
   --secondary-blue: #0d4b76;
   --light-blue: #e1f0fa;
   --accent-blue: #65b2e6;
@@ -62,7 +62,7 @@
 
 .aboutContent h2 {
   font-size: 2.5rem;
-  color: var(--primary-color);
+  color: rgb(76 33 119 );
   margin-bottom: 20px;
   position: relative;
   padding-bottom: 1rem;
@@ -195,7 +195,7 @@
 
 .valueCard h3 {
   font-size: 1.5rem;
-  color: var(--primary-color);
+  color: rgb(76 33 119 );
   margin-bottom: 15px;
   position: relative;
   padding-bottom: 10px;
@@ -208,7 +208,7 @@
   left: 0;
   width: 50px;
   height: 2px;
-  background-color: var(--secondary-color);
+  background-color: #7c35b3;
 }
 
 .valueCard p {
@@ -217,7 +217,7 @@
 }
 
 .statsSection {
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(135deg, rgb(76 33 119 ), #7c35b3);
   color: var(--white);
   padding: 60px 0;
 }
@@ -334,7 +334,7 @@
 
 .aboutContent h2 {
   font-size: 2rem;
-  color: var(--primary-color);
+  color: rgb(76 33 119 );
   margin-bottom: 20px;
   position: relative;
   padding-bottom: 15px;
@@ -347,12 +347,12 @@
   left: 0;
   width: 50px;
   height: 2px;
-  background-color: var(--secondary-color);
+  background-color: #7c35b3;
 }
 
 .aboutContent h3 {
   font-size: 1.5rem;
-  color: var(--primary-color);
+  color: rgb(76 33 119 );
   margin: 30px 0 15px;
   position: relative;
   padding-bottom: 10px;
@@ -365,7 +365,7 @@
   left: 0;
   width: 50px;
   height: 2px;
-  background-color: var(--secondary-color);
+  background-color: #7c35b3;
 }
 
 .aboutContent p {

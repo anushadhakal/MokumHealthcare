@@ -24,7 +24,7 @@
   
   .categoryButton.active,
   .categoryButton:hover {
-    background-color: var(--primary-color);
+    background-color: rgb(76 33 119 );
     color: var(--white);
   }
   
@@ -69,7 +69,7 @@
     position: absolute;
     top: 15px;
     right: 15px;
-    background-color: var(--secondary-color);
+    background-color: #7c35b3;
     color: var(--white);
     padding: 5px 10px;
     border-radius: 3px;
@@ -98,7 +98,7 @@
   }
   
   .blogCard:hover .blogContent h3 {
-    color: var(--primary-color);
+    color: rgb(76 33 119 );
   }
   
   .blogContent p {
@@ -109,7 +109,7 @@
   
   .readMoreLink {
     display: inline-block;
-    color: var(--primary-color);
+    color: rgb(76 33 119 );
     font-weight: 600;
     position: relative;
     transition: var(--transition);
@@ -122,7 +122,7 @@
   }
   
   .readMoreLink:hover {
-    color: var(--secondary-color);
+    color: #7c35b3;
   }
   
   .readMoreLink:hover::after {
@@ -152,7 +152,7 @@
   
   .pageButton.active,
   .pageButton:hover {
-    background-color: var(--primary-color);
+    background-color: rgb(76 33 119 );
     color: var(--white);
   }
   
@@ -173,7 +173,7 @@
   
   .subscribeContent h2 {
     font-size: 2rem;
-    color: var(--primary-color);
+    color: rgb(76 33 119 );
     margin-bottom: 15px;
   }
   
@@ -198,12 +198,12 @@
   }
   
   .subscribeForm input:focus {
-    border-color: var(--primary-color);
+    border-color: rgb(76 33 119 );
   }
   
   .subscribeForm button {
     padding: 0 25px;
-    background-color: var(--primary-color);
+    background-color: rgb(76 33 119 );
     color: var(--white);
     border-radius: 5px;
     font-weight: 600;
@@ -211,7 +211,7 @@
   }
   
   .subscribeForm button:hover {
-    background-color: var(--secondary-color);
+    background-color: #7c35b3;
   }
   
   .formDisclaimer {
@@ -220,7 +220,7 @@
   }
   
   .formDisclaimer a {
-    color: var(--primary-color);
+    color: rgb(76 33 119 );
     text-decoration: underline;
   }
   

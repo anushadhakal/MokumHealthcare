@@ -5,7 +5,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: var(--primary-color);
+    background-color: rgb(76 33 119 );
     color: var(--white);
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@
   }
   
   .scrollToTop:hover {
-    background-color: var(--secondary-color);
+    background-color: #7c35b3;
     transform: translateY(-5px);
     opacity: 1;
   }

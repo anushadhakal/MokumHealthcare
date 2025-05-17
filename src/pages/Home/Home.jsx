@@ -4,6 +4,8 @@ import ServiceCard from "../../components/ServiceCard/ServiceCard"
 import IndustryCard from "../../components/IndustryCard/IndustryCard"
 import WhyUsSection from "../../components/WhyUsSection/WhyUsSection"
 import styles from "./Home.module.css"
+import { FaUserMd , FaAccessibleIcon , FaHouseUser } from "react-icons/fa";
+
 // import heroImage from "../../assets/images/hero-bg.jpg"
 // import disabilityCareImage from "../../assets/images/disability-care.jpg"
 // import agedCareImage from "../../assets/images/aged-care.jpg"
@@ -26,22 +28,22 @@ const Home = () => {
 
           <div className={styles.servicesGrid}>
             <ServiceCard
-              icon={<FaUserNurse />}
-              title="Staffing "
+              icon={< FaUserMd  />}
+              title="Workforce Solutions"
               description="24/7 casual workforce available to meet your immediate and ongoing staffing needs across healthcare sectors."
               link="/industry/overview"
               linkText="Learn More"
             />
             <ServiceCard
-              icon={<FaHandshake />}
-              title="Recruitment"
+              icon={<FaAccessibleIcon  />}
+              title="NDIS and Disability"
               description="Tailored hiring options including RPO and contract staffing to find the perfect healthcare professionals for your organization."
               link="/industry/recruitment-solutions"
               linkText="Learn More"
             />
              <ServiceCard
-              icon={<FaUserNurse />}
-              title="Staffing "
+              icon={<FaHouseUser  />}
+              title="Home Care"
               description="24/7 casual workforce available to meet your immediate and ongoing staffing needs across healthcare sectors."
               link="/industry/overview"
               linkText="Learn More"
@@ -59,13 +61,13 @@ const Home = () => {
           <div className={styles.industryCards}>
             <IndustryCard
               image="https://placehold.co/600x400"
-              title="Disability Care"
+              title="Home Care & NDIS Disabilities"
               description="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
               link="/industry/disability-care"
             />
             <IndustryCard
               image="https://placehold.co/600x400"
-              title="Aged Care"
+              title="Workforce Solutions"
               description="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
               link="/industry/aged-care"
               isReversed={true}

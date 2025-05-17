@@ -40,7 +40,7 @@
   .contentContainer h3 {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: var(--primary-color);
+    color: rgb(76 33 119 );
   }
   
   .contentContainer p {
@@ -51,7 +51,7 @@
   
   .readMoreLink {
     display: inline-block;
-    color: var(--primary-color);
+    color: rgb(76 33 119 );
     font-weight: 600;
     position: relative;
     transition: var(--transition);
@@ -65,7 +65,7 @@
   }
   
   .readMoreLink:hover {
-    color: var(--secondary-color);
+    color: #7c35b3;
   }
   
   .readMoreLink:hover::after {

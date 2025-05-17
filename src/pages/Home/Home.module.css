@@ -2,7 +2,7 @@
 :root {
     --white: #ffffff;
     --light-bg: #f5f7fa;
-    --primary-color: #3a86ff;
+    --primary-color: rgb(76 33 119 );
     --secondary-color: #8338ec;
     --transition: all 0.3s ease-in-out;
     --border-radius: 12px;
@@ -78,7 +78,7 @@
     right: 0;
     width: 0;
     height: 0;
-    background: linear-gradient(135deg, transparent 50%, rgba(58, 134, 255, 0.1) 50%);
+    background: linear-gradient(135deg, transparent 50%,  rgb(76, 33, 119,0.1 ) 50%);
     transition: var(--transition);
   }
   
@@ -125,7 +125,7 @@
 
 .industrySection .sectionHeader h2,
 .industrySection .sectionHeader p {
-  background-color: #3a56e4;
+  background-color:  rgb(76 33 119 );
   color: var(--white);
   display: inline-block;
   padding: 10px 20px;
@@ -299,7 +299,7 @@
 }
   /* CTA Section */
   .ctaSection {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, rgb(76 33 119 ), #7c35b3);
     color: var(--white);
     text-align: center;
     position: relative;
@@ -409,7 +409,7 @@
   
   .primaryBtn {
     background-color: var(--white);
-    color: var(--primary-color);
+    color: rgb(76 33 119 );
     z-index: 1;
   }
   

@@ -42,7 +42,7 @@
   .heroButton {
     display: inline-block;
     padding: 15px 30px;
-    background-color: var(--secondary-color);
+    background-color: #7c35b3;
     color: var(--white);
     font-weight: 600;
     border-radius: 5px;
@@ -52,7 +52,7 @@
   }
   
   .heroButton:hover {
-    background-color: var(--primary-color);
+    background-color: rgb(76 33 119 );
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   }

@@ -19,11 +19,7 @@ const WhyUsSection = () => {
       title: "Skilled Workforce",
       description: "Our team consists of highly skilled and experienced healthcare professionals.",
     },
-    {
-      icon: <FaMapMarkedAlt />,
-      title: "Nationwide Coverage",
-      description: "We provide services across metro, remote, and regional areas of Australia.",
-    },
+   
   ]
 
   return (

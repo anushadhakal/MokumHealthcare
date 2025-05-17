@@ -78,7 +78,7 @@ const Footer = () => {
                   <FaPhone /> 8888888
                 </li>
                 <li>
-                  <FaEnvelope /> 
+                  <FaEnvelope />  abc@example.com
                 </li>
               </ul>
             </div>

@@ -11,7 +11,7 @@
   .contactInfo h2,
   .contactForm h2 {
     font-size: 2rem;
-    color: var(--primary-color);
+    color: rgb(76 33 119 );
     margin-bottom: 20px;
   }
   
@@ -40,7 +40,7 @@
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
-    color: var(--primary-color);
+    color: rgb(76 33 119 );
     margin-right: 15px;
     flex-shrink: 0;
   }
@@ -69,13 +69,13 @@
     height: 40px;
     background-color: var(--light-bg);
     border-radius: 50%;
-    color: var(--primary-color);
+    color: rgb(76 33 119 );
     font-size: 1.2rem;
     transition: var(--transition);
   }
   
   .socialLinks a:hover {
-    background-color: var(--primary-color);
+    background-color: rgb(76 33 119 );
     color: var(--white);
     transform: translateY(-3px);
   }
@@ -118,13 +118,13 @@
   
   .formGroup input:focus,
   .formGroup textarea:focus {
-    border-color: var(--primary-color);
+    border-color: rgb(76 33 119 );
   }
   
   .submitBtn {
     width: 100%;
     padding: 15px;
-    background-color: var(--primary-color);
+    background-color: rgb(76 33 119 );
     color: var(--white);
     border-radius: 5px;
     font-weight: 600;
@@ -133,7 +133,7 @@
   }
   
   .submitBtn:hover {
-    background-color: var(--secondary-color);
+    background-color: #7c35b3;
   }
   
   .mapSection {
@@ -167,7 +167,7 @@
   
   .officeCard h3 {
     font-size: 1.3rem;
-    color: var(--primary-color);
+    color: rgb(76 33 119 );
     margin-bottom: 15px;
     position: relative;
     padding-bottom: 10px;
@@ -180,7 +180,7 @@
     left: 0;
     width: 50px;
     height: 2px;
-    background-color: var(--secondary-color);
+    background-color: #7c35b3;
   }
   
   .officeCard p {

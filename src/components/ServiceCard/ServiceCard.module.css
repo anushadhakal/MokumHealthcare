@@ -16,7 +16,7 @@
   
   .icon {
     font-size: 3rem;
-    color: var(--primary-color);
+    color: rgb(76 33 119 );
     margin-bottom: 20px;
   }
   
@@ -34,7 +34,7 @@
   
   .cardLink {
     display: inline-block;
-    color: var(--primary-color);
+    color: rgb(76 33 119 );
     font-weight: 600;
     position: relative;
     transition: var(--transition);
@@ -47,7 +47,7 @@
   }
   
   .cardLink:hover {
-    color: var(--secondary-color);
+    color: #7c35b3;
   }
   
   .cardLink:hover::after {

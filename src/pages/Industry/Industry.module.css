@@ -10,7 +10,7 @@
   
   .overviewContent h2 {
     font-size: 2.5rem;
-    color: var(--primary-color);
+    color: rgb(76 33 119 );
     margin-bottom: 20px;
   }
   
@@ -66,7 +66,7 @@
   
   .cardContent h3 {
     font-size: 1.8rem;
-    color: var(--primary-color);
+    color: rgb(76 33 119 );
     margin-bottom: 15px;
   }
   
@@ -92,13 +92,13 @@
     content: "✓";
     position: absolute;
     left: 0;
-    color: var(--secondary-color);
+    color: #7c35b3;
     font-weight: bold;
   }
   
   .readMoreLink {
     display: inline-block;
-    color: var(--primary-color);
+    color: rgb(76 33 119 );
     font-weight: 600;
     position: relative;
     transition: var(--transition);
@@ -113,7 +113,7 @@
   }
   
   .readMoreLink:hover {
-    color: var(--secondary-color);
+    color: #7c35b3;
   }
   
   .readMoreLink:hover::after {
@@ -153,7 +153,7 @@
   .stepNumber {
     width: 80px;
     height: 80px;
-    background-color: var(--primary-color);
+    background-color: rgb(76 33 119 );
     color: var(--white);
     border-radius: 50%;
     display: flex;
@@ -177,7 +177,7 @@
   }
   
   .ctaSection {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, rgb(76 33 119 ), #7c35b3);
     color: var(--white);
     text-align: center;
   }
@@ -215,7 +215,7 @@
   
   .primaryBtn {
     background-color: var(--white);
-    color: var(--primary-color);
+    color: rgb(76 33 119 );
   }
   
   .primaryBtn:hover {
@@ -454,8 +454,8 @@ main:has(h2:contains("Excellence in Aged Care")) .secondaryBtn:hover {
 }/* Industry.module.css - Blue Theme for Healthcare Website */
 
 :root {
-  --primary-blue: #1e88e5;
-  --secondary-blue: #0d47a1;
+  --primary-blue: #c77dff;
+  --secondary-blue: #c77dff;
   --accent-blue: #4fc3f7;
   --light-blue: #e3f2fd;
   --dark-blue: #0a2d66;

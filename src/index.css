@@ -5,8 +5,8 @@
 }
 
 :root {
-  --primary-color: #0056b3;
-  --secondary-color: #00a0e9;
+  --primary-color: #c77dff;
+  --secondary-color: #c77dff;
   --accent-color: #ff6b6b;
   --text-color: #333;
   --light-text: #666;
@@ -48,7 +48,7 @@ button {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   text-align: center;
-  color: var(--primary-color);
+  color: rgb(76 33 119 );
 }
 
 .section-subtitle {
