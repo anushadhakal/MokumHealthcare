@@ -29,13 +29,11 @@ Mokum Healthcare is more than a service. It’s a community built on trust, comp
 
               <h3>Our Mission</h3>
               <p>
-                Our Mission
 To provide person-centred care that empowers individuals to live with dignity, independence, and connection. We’re here to make everyday moments meaningful with warmth, professionalism, and a deep respect for every person we support.
               </p>
 
               <h3>Our Vision</h3>
               <p>
-              Our Vision
 To be a trusted name in care known for our heart, our integrity, and the way we make people feel. We envision a world where kindness is the foundation of care, where every person has access to support that truly understands them, and where no one ever feels alone on their journey.
               </p>
             </div>
