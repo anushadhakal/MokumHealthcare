@@ -75,11 +75,11 @@ const Navbar = () => {
             </a>
           </div>
           <div className={styles.contactInfo}>
-            <a href="mailto:abc@example.com">
-              <FaEnvelope /> abc@example.com
+            <a href="mailto:mokumhealthcare@gmail.com">
+              <FaEnvelope /> mokumhealthcare@gmail.com
             </a>
             <a href="tel:+61123456789">
-              <FaPhone /> 888888888
+              <FaPhone /> 0478489358
             </a>
           </div>
         </div>

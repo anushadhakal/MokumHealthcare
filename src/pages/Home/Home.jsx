@@ -15,8 +15,9 @@ const Home = () => {
     <main>
       <HeroSection
         backgroundImage="https://placehold.co/600x400"
-        title="lorem ipsum dolor sit amet"
-        subtitle="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        title="Mokum Health Care"
+        subtitle="A trusted provider of Nursing & Disability Support Professionals
+We deliver high-quality temporary and permanent staffing solutions across residential, community, and clinical care settings—matching the right people with the right support needs to ensure personalised, person-centred care every time."
         buttonText="Learn More"
         buttonLink="/about/overview"
       />
@@ -62,13 +63,15 @@ const Home = () => {
             <IndustryCard
               image="https://placehold.co/600x400"
               title="Home Care & NDIS Disabilities"
-              description="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              description="Supporting independence with compassionate, in-home NDIS services.
+Tailored care that empowers choice, dignity, and quality of life."
               link="/industry/disability-care"
             />
             <IndustryCard
               image="https://placehold.co/600x400"
               title="Workforce Solutions"
-              description="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              description="Flexible, reliable staffing for healthcare and community services.
+We provide skilled professionals who deliver person-centred care."
               link="/industry/aged-care"
               isReversed={true}
             />

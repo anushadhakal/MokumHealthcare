@@ -14,7 +14,7 @@ const Footer = () => {
             <div className={styles.footerWidget}>
               <h3>About Mokum Healthcare</h3>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, amet!
+                At Mokum, we believe in staffing with heart and caring with purpose. Our team is committed to delivering compassionate, person-centred care in residential and community settings.
               </p>
               <div className={styles.socialLinks}>
                 <a href="#" target="_blank" rel="noopener noreferrer">
@@ -72,13 +72,13 @@ const Footer = () => {
               <h3>Contact Us</h3>
               <ul className={styles.contactInfo}>
                 <li>
-                  <FaMapMarkerAlt /> Lorem ipsum dolor sit amet.
+                  <FaMapMarkerAlt /> Sydney, Australia
                 </li>
                 <li>
-                  <FaPhone /> 8888888
+                  <FaPhone /> 0478489358
                 </li>
                 <li>
-                  <FaEnvelope />  abc@example.com
+                  <FaEnvelope />  mokumhealthcare@gmail.com
                 </li>
               </ul>
             </div>
