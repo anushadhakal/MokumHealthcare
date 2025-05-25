@@ -75,7 +75,7 @@ const Footer = () => {
                   <FaMapMarkerAlt /> Lorem ipsum dolor sit amet.
                 </li>
                 <li>
-                  <FaPhone /> 8888888
+                  <FaPhone /> 0478489358
                 </li>
                 <li>
                   <FaEnvelope />  abc@example.com
@@ -92,12 +92,12 @@ const Footer = () => {
         <div className="container">
           <div className={styles.footerBottomContent}>
             <p>&copy; {currentYear} Mokum Healthcare. All Rights Reserved. </p>
-        
+
           </div>
-            <p className={styles.footerBottomContent} > Powered By: <a href="https://birtasoft.com" target="_blank" rel="noopener noreferrer">Birta Soft</a></p>
+          <p className={styles.footerBottomContent} > Powered By: <a href="https://birtasoft.com" target="_blank" rel="noopener noreferrer">Birta Soft</a></p>
         </div>
       </div>
-    </footer> 
+    </footer>
   );
 };
 

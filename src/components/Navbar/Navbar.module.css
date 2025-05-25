@@ -95,7 +95,6 @@
   transition: var(--transition);
   position: relative;
   text-decoration: none;
-  padding: 5px 0;
   display: block;
 }
 
