@@ -99,16 +99,12 @@ const AboutOverview = () => {
         <div className="container">
           <div className={styles.statsGrid}>
             <div className={styles.statItem}>
-              <div className={styles.statNumber}>10+</div>
+              <div className={styles.statNumber}>4+</div>
               <div className={styles.statLabel}>Years of Experience</div>
             </div>
             <div className={styles.statItem}>
-              <div className={styles.statNumber}>1000+</div>
+              <div className={styles.statNumber}>100+</div>
               <div className={styles.statLabel}>Healthcare Professionals</div>
-            </div>
-            <div className={styles.statItem}>
-              <div className={styles.statNumber}>500+</div>
-              <div className={styles.statLabel}>Client Facilities</div>
             </div>
             <div className={styles.statItem}>
               <div className={styles.statNumber}>24/7</div>
