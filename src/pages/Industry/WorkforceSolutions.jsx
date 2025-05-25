@@ -18,13 +18,13 @@ const WorkforceSolutions = () => {
           <div className={styles.serviceContent}>
             <h2>Strategic Healthcare Workforce Management</h2>
             <p>
-              We deliver tailored workforce solutions that help healthcare organizations optimize their staffing 
-              models, reduce costs, and improve quality of care. Our comprehensive approach addresses both immediate 
+              We deliver tailored workforce solutions that help healthcare organizations optimize their staffing
+              models, reduce costs, and improve quality of care. Our comprehensive approach addresses both immediate
               staffing needs and long-term workforce planning.
             </p>
             <p>
-              From temporary staffing and permanent recruitment to workforce optimization and compliance management, 
-              our solutions are designed to enhance operational efficiency while ensuring consistent delivery of 
+              From temporary staffing and permanent recruitment to workforce optimization and compliance management,
+              our solutions are designed to enhance operational efficiency while ensuring consistent delivery of
               high-quality care across all healthcare settings.
             </p>
           </div>
@@ -34,7 +34,7 @@ const WorkforceSolutions = () => {
               <div className={styles.featureIcon}>
                 <FaUserTie />
               </div>
-              <h3>Permanent Recruitment</h3>
+              <h3>Temporary and permanent staffing</h3>
               <p>
                 Strategic talent acquisition services to identify, screen, and secure qualified healthcare professionals for long-term positions.
               </p>
@@ -84,10 +84,10 @@ const WorkforceSolutions = () => {
           <div className={styles.testimonialCard}>
             <div className={styles.quoteIcon}>"</div>
             <p className={styles.quoteText}>
-              Mokum Healthcare's workforce solutions have revolutionized our staffing approach. Their comprehensive 
-              strategy addressed both our immediate staffing challenges and long-term workforce needs. The analytics 
-              platform they implemented has given us unprecedented visibility into our staffing patterns, helping us 
-              reduce overtime costs by 23% while improving staff satisfaction scores. Their consultative approach truly 
+              Mokum Healthcare's workforce solutions have revolutionized our staffing approach. Their comprehensive
+              strategy addressed both our immediate staffing challenges and long-term workforce needs. The analytics
+              platform they implemented has given us unprecedented visibility into our staffing patterns, helping us
+              reduce overtime costs by 23% while improving staff satisfaction scores. Their consultative approach truly
               set them apart from other staffing providers we've worked with.
             </p>
           </div>
@@ -99,7 +99,7 @@ const WorkforceSolutions = () => {
           <div className={styles.ctaContent}>
             <h2>Ready to transform your healthcare workforce strategy?</h2>
             <p>
-              Contact our workforce solutions team today to discuss how our comprehensive approach can help your 
+              Contact our workforce solutions team today to discuss how our comprehensive approach can help your
               organization optimize staffing, reduce costs, and enhance quality of care.
             </p>
             <div className={styles.ctaButtons}>

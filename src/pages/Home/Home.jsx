@@ -72,9 +72,21 @@ Tailored care that empowers choice, dignity, and quality of life."
             />
             <IndustryCard
               image="https://placehold.co/600x400"
-              title="Workforce Solutions"
-              description="Flexible, reliable staffing for healthcare and community services.
-We provide skilled professionals who deliver person-centred care."
+              title="Our Workforce Solutions"
+              description={<><p>We connect organisations with qualified and
+                compassionate healthcare professionals, offering: </p>
+                <p>
+                  Temporary and permanent staffing across
+                  nursing, disability, and aged care sectors. <br />
+
+                  Rapid placement for urgent shift coverage and
+                  continuity of care. <br />
+
+                  Customised workforce planning to suit your
+                  service model, budget, and client needs. <br />
+
+                  Dedicated clinical support for both our staff
+                  and your teams</p></>}
               link="/industry/aged-care"
               isReversed={true}
             />
