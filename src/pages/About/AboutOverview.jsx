@@ -18,20 +18,23 @@ const AboutOverview = () => {
             <div className={styles.aboutContent}>
               <h2>Our Story</h2>
               <p>
-               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui maiores voluptas aut inventore sapiente accusamus iste labore veniam magni quas dignissimos, eaque non eligendi debitis laboriosam esse commodi saepe quasi.
+Mokum Healthcare began with a simple truth: kindness matters. We saw the gaps in care, the rushed moments, the missed connections and we knew we could do better. “Mokum” means safe place, and that’s what we’ve built a calm, caring space where people feel supported, respected, and truly seen.
+
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque ea odit molestias quidem repellat nulla voluptatem illo accusamus aut deserunt impedit sint et provident adipisci consequuntur enim, odio sit aliquid tenetur magnam ullam repellendus inventore. Sint unde natus nesciunt ipsa?
+               We come from different walks of life, but we’re united by one belief: care should always come from the heart. Whether we’re helping someone with daily living, nursing care, or just being there on the tough days, we show up with empathy, patience, and presence.
+
+Mokum Healthcare is more than a service. It’s a community built on trust, compassion, and the kind of kindness that lifts people up
               </p>
 
               <h3>Our Mission</h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, esse consequuntur deserunt unde blanditiis quisquam similique earum nihil accusamus impedit perspiciatis nesciunt quis natus repellat, explicabo laboriosam, velit dignissimos cumque.
+To provide person-centred care that empowers individuals to live with dignity, independence, and connection. We’re here to make everyday moments meaningful with warmth, professionalism, and a deep respect for every person we support.
               </p>
 
               <h3>Our Vision</h3>
               <p>
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad explicabo rem optio eaque aliquid ab excepturi a tenetur esse. Repellendus voluptas est cupiditate minima saepe aperiam sint, praesentium vitae eius?
+To be a trusted name in care known for our heart, our integrity, and the way we make people feel. We envision a world where kindness is the foundation of care, where every person has access to support that truly understands them, and where no one ever feels alone on their journey.
               </p>
             </div>
             <div className={styles.aboutImage}>

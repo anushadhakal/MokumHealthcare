@@ -66,13 +66,15 @@ const Home = () => {
             <IndustryCard
               image="https://placehold.co/600x400"
               title="Home Care & NDIS Disabilities"
-              description="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              description="Supporting independence with compassionate, in-home NDIS services.
+Tailored care that empowers choice, dignity, and quality of life."
               link="/industry/disability-care"
             />
             <IndustryCard
               image="https://placehold.co/600x400"
               title="Workforce Solutions"
-              description="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              description="Flexible, reliable staffing for healthcare and community services.
+We provide skilled professionals who deliver person-centred care."
               link="/industry/aged-care"
               isReversed={true}
             />
